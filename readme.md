@@ -17,7 +17,7 @@ This application lets you upload listing and contact csv data separately and gen
 
 - H2 Database
 
-# How to run:
+# How to run
 
 Prerequisites:
 
@@ -41,12 +41,19 @@ FE:
 
 - Check http://localhost:4200
 
-# Code generators used:
+# Code generators used
 
 - Spring Initializr
 
 - Angular CLI
 
-# Rest API:
+# Rest API
 
 - Postman collection to test REST API can be found in the repository.
+
+# TODO
+
+- Add unit tests for BE service logic
+- Dockerize application
+- Improve Top 5 Listings per month report API complexity
+
