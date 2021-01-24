@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "a11149ad-1523-4a08-b9f6-9fadb8392f42",
+		"name": "AS24",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Health Check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Listings",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "",
+							"type": "file",
+							"src": "/C:/Users/Berk/Desktop/AS24_Fullstack_Engineer_Coding_Challenge/listings.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload Contacts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"contentType": "",
+							"type": "file",
+							"src": "/C:/Users/Berk/Desktop/AS24_Fullstack_Engineer_Coding_Challenge/contacts.csv"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/rest/listings/contacts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"listings",
+						"contacts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Listings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/listings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"listings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report 1 - Average Listing Selling Price per Seller Type",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/report/report1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"report",
+						"report1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report 2 - Percentual Distribution of available cars by Make",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/report/report1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"report",
+						"report1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report 3 - Average price of the 30% most contacted listings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/report/report3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"report",
+						"report3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Report 4 - The Top 5 most contacted listings per Month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/rest/report/report4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rest",
+						"report",
+						"report4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

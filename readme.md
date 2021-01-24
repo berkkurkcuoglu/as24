@@ -46,3 +46,7 @@ FE:
 - Spring Initializr
 
 - Angular CLI
+
+# Rest API:
+
+- Postman collection to test REST API can be found in the repository.
