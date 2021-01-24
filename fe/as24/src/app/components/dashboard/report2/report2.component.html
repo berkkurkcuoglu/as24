@@ -1,0 +1,20 @@
+<div class="report2">
+  <div class="report2__header">
+    Percentual distribution of available cars by Make
+  </div>
+  <div class="report2__report" *ngIf="makes?.length > 0">
+    <div class="report__header">
+      <div class="header__column1">Make</div>
+      <div class="header__column2">Distribution</div>
+    </div>
+    <div class="report__content">
+      <div class="content__row" *ngFor="let make of makes">
+        <div class="content__column1">{{ make }}</div>
+        <div class="content__column2">{{ reportData[make]?.toFixed(2) }}%</div>
+      </div>
+    </div>
+  </div>
+  <div class="report2__no-data" *ngIf="!(makes?.length > 0)">
+    No Data Available
+  </div>
+</div>

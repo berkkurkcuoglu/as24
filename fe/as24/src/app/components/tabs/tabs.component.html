@@ -1,0 +1,16 @@
+<div class="tabs">
+  <div
+    class="tabs__tab tabs__tab--dashboard"
+    [ngClass]="{ active: selectedTab === Tabs.DASHBOARD }"
+    (click)="selectTab(Tabs.DASHBOARD)"
+  >
+    Dashboard
+  </div>
+  <div
+    class="tabs__tab tabs__tab--upload"
+    [ngClass]="{ active: selectedTab === Tabs.UPLOAD }"
+    (click)="selectTab(Tabs.UPLOAD)"
+  >
+    Upload
+  </div>
+</div>

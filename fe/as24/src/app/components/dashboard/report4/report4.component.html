@@ -1,0 +1,29 @@
+<div class="report4">
+  <div class="report4__header">The Top 5 most contacted listings per Month</div>
+  <div class="report4__report" *ngFor="let month of months">
+    <div class="report__title">Month: {{ month }}</div>
+    <div class="report__header">
+      <div class="header__column1">Ranking</div>
+      <div class="header__column2">Listing ID</div>
+      <div class="header__column3">Make</div>
+      <div class="header__column4">Selling Price</div>
+      <div class="header__column5">Mileage</div>
+      <div class="header__column6">Total Amount of Contacts</div>
+    </div>
+    <div class="report__content">
+      <div class="content__row" *ngFor="let listing of reportData[month]">
+        <div class="content__column1">{{ listing.ranking }}</div>
+        <div class="content__column2">{{ listing.listingId }}</div>
+        <div class="content__column3">{{ listing.make }}</div>
+        <div class="content__column4">
+          {{ listing.price | currency: "EUR" }}
+        </div>
+        <div class="content__column5">{{ listing.mileage.toFixed(3) }} KM</div>
+        <div class="content__column6">{{ listing.totalContacts }}</div>
+      </div>
+    </div>
+  </div>
+  <div class="report4__no-data" *ngIf="!(months?.length > 0)">
+    No Data Available
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="report3">
+  <div class="report3__header">
+    Average price of the 30% most contacted listings
+  </div>
+  <div class="report3__report" *ngIf="averagePrice">
+    <div class="report__header">Average Price</div>
+    <div class="report__content">
+      {{ averagePrice | currency: "EUR" }}
+    </div>
+  </div>
+  <div class="report1__no-data" *ngIf="!averagePrice">No Data Available</div>
+</div>

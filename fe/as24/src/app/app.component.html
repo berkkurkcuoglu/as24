@@ -1,0 +1,3 @@
+<app-tabs (tabSelected)="setSelectedTab($event)"></app-tabs>
+<app-dashboard *ngIf="selectedTab === Tabs.DASHBOARD"></app-dashboard>
+<app-data-insertion *ngIf="selectedTab === Tabs.UPLOAD"></app-data-insertion>

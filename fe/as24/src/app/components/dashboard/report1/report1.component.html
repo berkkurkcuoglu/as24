@@ -1,0 +1,22 @@
+<div class="report1">
+  <div class="report1__header">
+    Average Listing Selling Price per Seller Type
+  </div>
+  <div class="report1__report" *ngIf="sellers?.length > 0">
+    <div class="report__header">
+      <div class="header__column1">Seller Type</div>
+      <div class="header__column2">Average in Euro</div>
+    </div>
+    <div class="report__content">
+      <div class="content__row" *ngFor="let seller of sellers">
+        <div class="content__column1">{{ seller }}</div>
+        <div class="content__column2">
+          {{ reportData[seller] | currency: "EUR" }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="report1__no-data" *ngIf="!(sellers?.length > 0)">
+    No Data Available
+  </div>
+</div>

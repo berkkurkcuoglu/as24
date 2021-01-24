@@ -1,0 +1,32 @@
+.report1 {
+  &__header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  &__report {
+    .report {
+      &__header {
+        display: grid;
+        grid-template-columns: repeat(2, 10rem);
+        & > div {
+          border: 1px solid #dedede;
+          padding: 1rem;
+          font-weight: bold;
+        }
+      }
+      &__content {
+        .content {
+          &__row {
+            display: grid;
+            grid-template-columns: repeat(2, 10rem);
+            & > div {
+              border: 1px solid #dedede;
+              padding: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

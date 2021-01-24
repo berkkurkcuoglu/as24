@@ -1,0 +1,22 @@
+<div class="data-insertion">
+  <div class="data-insertion__uploader data-insertion__uploader--listings">
+    <div class="uploader__label">Upload Listings CSV</div>
+    <input class="uploader__input" type="file" accept=".csv" #listingsInput />
+    <button
+      class="uploader__button"
+      (click)="upload(listingsInput.files[0], CsvTypes.LISTINGS)"
+    >
+      Upload
+    </button>
+  </div>
+  <div class="data-insertion__uploader data-insertion__uploader--contacts">
+    <div class="uploader__label">Upload Contacts CSV</div>
+    <input class="uploader__input" type="file" accept=".csv" #contactsInput />
+    <button
+      class="uploader__button"
+      (click)="upload(contactsInput.files[0], CsvTypes.CONTACTS)"
+    >
+      Upload
+    </button>
+  </div>
+</div>

@@ -38,7 +38,7 @@ public class Contact {
         Calendar calendar = new GregorianCalendar();
         calendar.setTime(this.getContactDate());
         Integer year = calendar.get(Calendar.YEAR);
-        Integer month = calendar.get(Calendar.MONTH);
+        Integer month = calendar.get(Calendar.MONTH) + 1;
         return new StringJoiner(".")
                 .add(month.toString())
                 .add(year.toString())

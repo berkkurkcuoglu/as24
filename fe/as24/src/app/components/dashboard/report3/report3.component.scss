@@ -1,0 +1,21 @@
+.report3 {
+  &__header {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  &__report {
+    width: 10rem;
+    .report {
+      &__header {
+        font-weight: bold;
+        border: 1px solid #dedede;
+        padding: 1rem;
+      }
+      &__content {
+        border: 1px solid #dedede;
+        padding: 1rem;
+      }
+    }
+  }
+}
